@@ -1,0 +1,14 @@
+#int
+#float
+#complex
+#str
+#list
+#tuple
+#range
+#dict
+#set
+#frozenset
+#bool
+#bytes
+#bytearray
+#memoryview
