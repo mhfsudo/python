@@ -21,7 +21,21 @@ or      Boolean or
 and     Boolean and
 not     Boolean not
 in      Element von                 1 in [0,1,2,]
+is      Return True if both variables are the same object
+is not  Return True if both variables are not the same object
 <<      Shiftoperator
 >>      Shiftoperator
-
+=       Zuweisung
++=      x += 1 -> x = x + 1
+-=      x -= 1 -> x = x - 1
+*=      x *= 1 -> x = x * 1
+/=      x /= 1 -> x = x / 1
+%=      x %= 1 -> x = x % 1
+//=     x //= 1 -> x = x // 1
+**=     x **= 1 -> x = x ** 1
+&=      x &= 1 -> x = x & 1
+|=      x |= 1 -> x = x | 1
+^=      x ^= 1 -> x = x ^ 1
+>>=     x >>= 1 -> x = x >> 1
+<<=     x <<= 1 -> x = x << 1
 """
