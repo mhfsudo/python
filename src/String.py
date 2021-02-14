@@ -1,29 +1,47 @@
-#String in Char aufteilen
+# String in Char aufteilen
 s = "Python"
 print(s[0])
 print(s[-5])
 indexLastChar = len(s) - 4
 print(s[indexLastChar])
-print(s[indexLastChar+1])
+print(s[indexLastChar + 1])
 LastCharacter = s[-2]
 print(LastCharacter)
 
-#String vergleichen
+# String länge
+a = "linux"
+print(len(a))  # output 5
+
+# String vergleichen
 a = "Linux"
 b = "Linux"
-print(a is b)
-#funktioniert nicht in der Console wenn Sonderzeichen vorhanden
+print(a is b)  # output True
+
+##funktioniert nicht in der Console wenn Sonderzeichen vorhanden
 a = "Linux!"
 b = "Linux!"
-print(a is b)
+print(a is b)  # output True
 
-#String kuerzen
+# String kuerzen
 txt = "Hello World"
-print(txt[1:7])
-print(txt[1:10:2])
+print(txt[1:7])  # output ello W
+print(txt[1:10:2])  # output el ol
 
-#String umkehren
-print(txt[::-1])
+# String umkehren
+print(txt[::-1])  # output dlroW olleH
+
+# upper case
+a = "Hello World"
+print(a.upper())  # output HELLO WORLD
+
+# lower case
+print(a.lower())  # output hello world
+
+# concatenate number and text
+text = "I'm {} years old"
+number = 30
+print(text.format(number))  # output I'm 30 years old
+
 
 """
 \       Zeilenfortsetzung
@@ -31,16 +49,12 @@ print(txt[::-1])
 \'      Einzel Ausführunszeichen
 \"      Doppel Ausfpührungszeichen
 \a      Glocke
-\b      Rücskschritt
+\b      Rücskschritt (backspace)
 \e      Ausmaskieren
 \0      Null
 \n      Zeilenvorschub (Linefeed)
 \v      Vertikaler Tabulator
 \t      Horizontaler Tabulator
 \r      Wagenrücklauf (Carriage Return)
-\f      Seitenvorschub
-\0XX    Oktaler Wert
-\xXX    Hexadezimaler Wert
+\f      Seitenvorschub (form feed)
 """
-
-
