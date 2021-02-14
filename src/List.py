@@ -1,51 +1,58 @@
-#Liste
-staedte = ["Basel", "Bern", "Zuerich"]
-print(staedte)
+# Liste
+l = ["Basel", "Bern", "Zuerich"]
+print(l)
 
-#Liste kuerzen
-print(staedte[1:3])
+# List constructor
+l = list(("Basel", "Bern", "Zürich"))
 
-#Liste umkehren
-print(staedte[::-1])
+# Liste kuerzen
+print(l[1:3]) # output ['Bern', 'Zuerich']
 
-#Listeninhalt kontrollieren
-print("Bern" in staedte)
-print("Luzern" in staedte)
+# Liste umkehren
+print(l[::-1]) # output ['Zuerich', 'Bern', 'Basel']
 
-#Listenelement hinzufügen
-staedte = ["Basel", "Bern", "Zuerich"]
-staedte.append("Luzern")
-print(staedte)
+# Listeninhalt kontrollieren
+print("Bern" in l)    # output True
+print("Luzern" in l)  # output False
+
+# Listenelement hinzufügen
+l = ["Basel", "Bern", "Zuerich"]
+l.append("Luzern")
+print(l)
 
 staedtePlus = ["Neuenburg", "Zug"]
-staedte.extend(staedtePlus)
-print(staedte)
+l.extend(staedtePlus)
+print(l)
 
-staedte.insert(0, "Aarau")
-print(staedte)
+l.insert(0, "Aarau")
+print(l)
 
-#Listenelement entfernen
-staedte.pop(3)
-print(staedte)
+# Listenelement entfernen
+l.pop(3)
+print(l)
 
-staedte.remove("Neuenburg")
-print(staedte)
+l.remove("Neuenburg")
+print(l)
 
-#Liste kopieren
-list1 = ['a','b']
+# Liste kopieren
+list1 = ['a', 'b']
 list2 = list1
+print(list1)    # output ['a', 'b']
+print(list2)    # output ['a', 'b']
 
-print(list1)
-print(list2)
+# Liste länge
+print(len(list1))   # output 2
 
-#Verschachtelte Liste kopieren
+# Verschachtelte Liste kopieren
 from copy import deepcopy
-
-list1 = ['a','b',['ab','ba']]
+list1 = ['a', 'b', ['ab', 'ba']]
 list2 = deepcopy(list1)
-
 print(list1)
 print(list2)
+
+# loop list
+for x in l:
+    print(x)
 
 """
 []                    leere Liste
