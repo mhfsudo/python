@@ -1,16 +1,28 @@
-#Menge (Elemente haben keinen festen Platz
-stadte = {"Basel", "Bern", "Zürich"}
-print(stadte)
+# Set Elemente haben keinen festen Platz
+s = {"Basel", "Bern", "Zürich"}
+print(s)
 
-print("Bern" in stadte)
-print("Aarau" in stadte)
+# Set constructor
+s = set(("Basel", "Bern", "Zürich"))
 
-stadte = {("Basel", 172000), ("Bern", 133000), ("Zürich", 514000)}
-print(stadte)
+# Set länge
+print(len(s))   # output 3
+
+# Set prüfen
+print("Bern" in s)  # output True
+print("Aarau" in s) # output False
+
+s = {("Basel", 172000), ("Bern", 133000), ("Zürich", 514000)}
+print(s)
 
 #Set erweitern
-stadte = {"Basel", "Bern", "Zürich"}
-stadte.add("Zug")
+s = {"Basel", "Bern", "Zürich"}
+s.add("Zug")
+
 #Es können keine Elemente doppelt vorkommen
-stadte.add("Bern")
-print(stadte)
+s.add("Bern")
+print(s)
+
+# loop set
+for x in s:
+    print(x)
