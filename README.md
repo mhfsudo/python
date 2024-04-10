@@ -4,7 +4,7 @@
 This Repo contains some python stuff from my studies.
 
 ## Installation
-- Python: https://www.mysql.com/
+- Python: https://www.python.org/
 
 ## Contributing
 Every feedback and support is appreciated.
